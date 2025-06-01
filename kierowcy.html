@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kierowcy - F1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🏁 F1 Portal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="kierowcy.html">Kierowcy</a></li>
+        <li><a href="tory.html">Tory</a></li>
+        <li><a href="technologia.html">Technologia</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </div>
+  </nav>
+<main class="container page-layout">
+  <section class="main-content">
+    <h2>Kierowcy i zespoły</h2>
+    <p>
+    Kierowcy Formuły 1 – wyścigowi artyści i atleci.
+</br></br>
+W Formule 1 nie ma miejsca dla przeciętnych kierowców. Każdy zawodnik, który zasiada za kierownicą bolidu, przeszedł lata treningów, selekcji i wyścigów juniorskich. Ich refleks, odporność psychiczna i przygotowanie fizyczne stoją na poziomie olimpijskim – w wyścigu często decydują ułamki sekund, a jedno mrugnięcie okiem może oznaczać utratę pozycji.
+</br></br>
+Na czele stawki w sezonie 2025 wciąż znajdują się nazwiska dobrze znane fanom – Max Verstappen, Charles Leclerc, Lewis Hamilton – ale coraz większą uwagę przyciągają młodzi kierowcy jak Oscar Piastri, Yuki Tsunoda czy 17 letni Kimi Antonelli . Ich rozwój obserwujemy z sezonu na sezon, a ich przyszłość może zadecydować o kształcie F1 w kolejnych latach.
+    </p>
+</br>
+    <button onclick="pokazCiekawostke('Lewis Hamilton ma więcej pole position niż jakikolwiek kierowca w historii – ponad 100!')">
+      Pokaż ciekawostkę
+    </button>
+	</br></br>
+	    <img src="kierowcy.jpg" alt="kierowcy" title="Obecni kierowcy F1">
+
+  </section>
+
+  <aside class="ciekawostka-box">
+    <h3>📌 Ciekawostka</h3>
+    <p id="ciekawostka-box-text">Kliknij przycisk, aby zobaczyć ciekawostkę o F1.</p>
+  </aside>
+</main>
+
+<footer>© 2025 Portal F1 – Wszelkie prawa zastrzeżone.</footer>
+
+<script>
+  function pokazCiekawostke(tresc) {
+    const box = document.getElementById("ciekawostka-box-text");
+    box.innerText = tresc;
+  }
+</script>	
+
+</body>
+
+</html>

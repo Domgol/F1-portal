@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portal Formuły 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- sekcja nawigacji (lepsze od divów) -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🏁 F1 Portal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="kierowcy.html">Kierowcy</a></li>
+        <li><a href="tory.html">Tory</a></li>
+        <li><a href="technologia.html">Technologia</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Treść stronkii-->
+  <main class="container page-layout">
+  <section class="main-content">
+    <h2>Witaj na portalu F1</h2>
+    <p>
+     Witamy w świecie Formuły 1 – królowej motorsportu! </br></br>Formuła 1 to globalna seria wyścigów, która od ponad 70 lat zachwyca fanów technologią, prędkością i emocjami. To nie tylko rywalizacja na torze – to także wyścig inżynierii, strategii i granic ludzkich możliwości. Od klasycznych torów jak Monza czy Silverstone, po nowoczesne obiekty w Bahrajnie i Arabii Saudyjskiej – F1 to mieszanka historii i innowacji.</br></br>
+Nasz portal to miejsce, w którym znajdziesz aktualności, analizy, profile kierowców i ciekawostki techniczne. Bez względu na to, czy dopiero zaczynasz swoją przygodę z F1, czy jesteś fanem od lat – znajdziesz tu coś dla siebie. </p>
+</br>
+
+
+    <button onclick="pokazCiekawostke('Czy wiesz, że bolid F1 generuje do 5G przeciążenia w zakrętach?')">
+      Pokaż ciekawostkę
+    </button></br></br>
+	
+	    <img src="ferrari.jpg" alt="Ferrari" title="Ferrari SF24 w akcji"> 
+		
+  </section>
+ <!-- ciekawostka -->
+  <aside class="ciekawostka-box">
+    <h3>📌 Ciekawostka</h3>
+    <p id="ciekawostka-box-text">Kliknij przycisk, aby zobaczyć ciekawostkę o F1.</p>
+  </aside>
+</main>
+
+
+  <footer>© 2025 Portal F1 – Wszelkie prawa zastrzeżone.</footer>
+  <!-- Element Javascriptu-->
+<script>
+  function pokazCiekawostke(tresc) {
+    const box = document.getElementById("ciekawostka-box-text");
+    box.innerText = tresc;
+  }
+</script>
+
+
+</body>
+</html>

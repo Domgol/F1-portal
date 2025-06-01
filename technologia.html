@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technologia - F1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🏁 F1 Portal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="kierowcy.html">Kierowcy</a></li>
+        <li><a href="tory.html">Tory</a></li>
+        <li><a href="technologia.html">Technologia</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </div>
+  </nav>
+<main class="container page-layout">
+  <section class="main-content">
+    <h2>Technologia i regulacje</h2>
+    <p>
+   Technika, która decyduje o zwycięstwie...
+</br></br>
+Współczesne bolidy F1 to najbardziej zaawansowane samochody wyścigowe na świecie. Hybrydowe jednostki napędowe z systemami odzyskiwania energii, aktywne elementy aerodynamiczne jak DRS, oraz setki czujników analizujących każdy milimetr jazdy – wszystko to tworzy złożoną maszynę, która działa na granicy możliwości fizyki.
+<img src="tech.jpg" alt="technologia" title="Technologia w F1"></br></br>
+
+W jednym sezonie zespoły mogą wprowadzać dziesiątki poprawek do bolidu, analizując dane z telemetrii w czasie rzeczywistym. Pracownie inżynieryjne zespołów przypominają laboratoria NASA – wykorzystuje się w nich sztuczną inteligencję, modelowanie CFD oraz druk 3D. Bez tej technologii – żaden kierowca, nawet najlepszy – nie byłby w stanie wygrać wyścigu.
+    </p>
+    </br>
+
+			<button onclick="pokazCiekawostke('Czy wiesz że silnik F1 osiąga do 15 000 obrotów na minutę?')">
+				Pokaż ciekawostkę
+			</button>
+			</br> </br>
+		<img src="mercedes.jpg" alt="Mercedes AMG z roku 2019" title="Mercedes AMG z roku 2019">
+  </section>
+
+  <aside class="ciekawostka-box">
+    <h3>📌 Ciekawostka</h3>
+    <p id="ciekawostka-box-text">Kliknij przycisk, aby zobaczyć ciekawostkę o F1.</p>
+  </aside>
+</main>
+
+	<footer>© 2025 Portal F1 – Wszelkie prawa zastrzeżone.</footer>
+<script>
+  function pokazCiekawostke(tresc) {
+    const box = document.getElementById("ciekawostka-box-text");
+    box.innerText = tresc;
+  }
+</script>
+
+</body>
+
+</html>

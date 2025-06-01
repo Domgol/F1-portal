@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia – F1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🏁 F1 Portal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="kierowcy.html">Kierowcy</a></li>
+        <li><a href="tory.html">Tory</a></li>
+        <li><a href="technologia.html">Technologia</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </div>
+  </nav>
+<main class="container page-layout">
+  <section class="main-content">
+    <h2>Historia i legendy F1</h2>
+    <p>
+    Formuła 1 – historia pasji, tragedii i legend.
+</br></br>
+Słynna braziliska piosenka autrostwa Roberta Bragi o Ayrtonie Sennie - legendarnym kierowcu F1
+<audio src="muzyka.mp3" autoplay loop controls></audio>
+</br></br>
+Historia Formuły 1 zaczęła się w 1950 roku na torze Silverstone. Pierwsze bolidy były prymitywne, a bezpieczeństwo praktycznie nie istniało – kierowcy ścigali się bez pasów, w otwartych kaskach, a na torach brakowało barier. Mimo to, właśnie wtedy narodziły się legendy: Juan Manuel Fangio, Alberto Ascari czy Jim Clark.
+</br></br> 
+W kolejnych dekadach F1 ewoluowała. Lata 70. i 80. to czas niebezpiecznych bolidów i dramatycznych wypadków, ale także narodzin supergwiazd jak Niki Lauda, Ayrton Senna czy Alain Prost. Po śmierci Senny w 1994 roku, wprowadzono szereg reform bezpieczeństwa, które odmieniły sport na zawsze. Dziś F1 to nie tylko widowisko, ale też hołd dla tych, którzy budowali ją przez lata – często ryzykując życiem.
+    </p></br>
+
+    <button onclick="pokazCiekawostke('Pierwszym polskim kierowcą w Formule 1 był Robert Kubica, który debiutował w 2006 roku i był jedynym polskim kierowcą w F1 do 2024 roku.')">
+      Pokaż ciekawostkę
+    </button></br></br>
+	 <img src="histo.jpg" alt="Historia" title="Krótka historia F1">
+  </section>
+
+  <aside class="ciekawostka-box">
+    <h3>📌 Ciekawostka</h3>
+    <p id="ciekawostka-box-text">Kliknij przycisk, aby zobaczyć ciekawostkę o F1.</p>
+  </aside>
+</main>
+
+
+	<footer>© 2025 Portal F1 – Wszelkie prawa zastrzeżone.</footer>	
+	
+<script>
+  function pokazCiekawostke(tresc) {
+    const box = document.getElementById("ciekawostka-box-text");
+    box.innerText = tresc;
+  }
+</script>
+		
+	</body>
+</html>

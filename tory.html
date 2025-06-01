@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tory - F1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🏁 F1 Portal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="kierowcy.html">Kierowcy</a></li>
+        <li><a href="tory.html">Tory</a></li>
+        <li><a href="technologia.html">Technologia</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </div>
+  </nav>
+<main class="container page-layout">
+  <section class="main-content">
+    <h2>Tory i Kalendarz</h2>
+    <p>
+   Każdy tor ma swoją duszę – i swoją historię...
+</br></br>
+Tory wyścigowe w Formule 1 to coś więcej niż tylko asfalt i zakręty. Każdy z nich ma własny charakter, wyzwania i historię. Spa-Francorchamps w Belgii słynie z dramatycznych warunków pogodowych i kultowego zakrętu Eau Rouge. Monako to tor uliczny, gdzie błąd nie wybacza – zamiast poboczy są betonowe ściany. Suzuka w Japonii oferuje wyjątkowy, techniczny układ w kształcie ósemki, gdzie nawet najmniejszy błąd kosztuje bardzo wiele.
+</br></br>
+Z kolei nowe tory, jak Dżudda czy Las Vegas, wprowadzają świeżość i widowiskowość. Projektowane z myślą o telewizyjnych transmisjach i nowym pokoleniu kibiców, oferują ciekawe układy i stawiają przed zespołami zupełnie inne wyzwania. Niezależnie od lokalizacji – każdy tor to inny test umiejętności kierowcy i pracy zespołu.</br></br>
+<button onclick="pokazCiekawostke('Tor w Spa ma najsłynniejszy zakręt świata – Eau Rouge – gdzie bolidy pokonują wzgórze z prędkością ponad 300 km/h.')">
+      Pokaż ciekawostkę
+    </button>
+</br></br>                 KALENDARZ FORMUŁY 1 NA ROK 2025
+    </p>
+    <img src="kalendarz.jpg" alt="Kalendarz Formuły 1 na rok 2025" title="Kalendarz Formuły 1 na rok 2025">
+
+    
+  </section>
+
+  <aside class="ciekawostka-box">
+    <h3>📌 Ciekawostka</h3>
+    <p id="ciekawostka-box-text">Kliknij przycisk, aby zobaczyć ciekawostkę o F1.</p>
+  </aside>
+</main>
+
+	<footer>© 2025 Portal F1 – Wszelkie prawa zastrzeżone.</footer>
+<script>
+  function pokazCiekawostke(tresc) {
+    const box = document.getElementById("ciekawostka-box-text");
+    box.innerText = tresc;
+  }
+</script>
+
+</body>
+</html>

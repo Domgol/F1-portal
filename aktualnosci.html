@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aktualności – F1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">🏁 F1 Portal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="kierowcy.html">Kierowcy</a></li>
+        <li><a href="tory.html">Tory</a></li>
+        <li><a href="technologia.html">Technologia</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page-layout">
+  <section class="main-content">
+    <h2>Aktualności i wydarzenia</h2>
+    <p>
+    Co nowego w świecie Formuły 1?
+</br></br>
+Sezon 2025 od samego początku dostarcza kibicom wielu emocji. Zmiany regulaminowe w aerodynamice i układzie podłogi zmusiły zespoły do radykalnych modyfikacji bolidów, co wpłynęło na układ sił w stawce. W pierwszych wyścigach widać wyraźnie, że dominacja Red Bulla została poważnie zagrożona, a McLaren i Mercedes zaskoczyli nową konkurencyjnością.
+</br></br>
+Rywalizacja Verstappena z młodymi kierowcami, powrót do formy Albona, a także świetna postawa kierowców środka stawki pokazują, że ten sezon może być jednym z najbardziej zaciętych w ostatnich latach. Śledź najnowsze wyniki, analizy strategii oraz komentarze ekspertów, aby być zawsze na bieżąco.
+</br></br>
+    </p>
+
+
+    <button onclick="pokazCiekawostke('W F1 każdy milimetr skrzydła może oznaczać różnicę 0,1 sekundy na okrążeniu!')">
+      Pokaż ciekawostkę
+    </button>
+  </section>
+  <aside class="ciekawostka-box">
+    <h3>📌 Ciekawostka</h3>
+    <p id="ciekawostka-box-text">Kliknij przycisk, aby zobaczyć ciekawostkę o F1.</p>
+  </aside>
+
+</main>
+
+<div class="container">
+  <section class="nowinki">
+    <h3>📰 Najnowsze nowinki</h3>
+
+    <div class="wyscig ostatni-wyscig">
+      <h4>Ostatni wyścig: Grand Prix Monako</h4>
+      <p>To był weekend Lando Norrisa! Brytyjczyk wygrał swoje pierwsze Monako w karierze i zrobił to pewnie – świetne kwalifikacje, bezbłędna jazda i zimna krew pod presją. Leclerc znów nie spełnił marzenia o domowym triumfie, choć tempo miał solidne. Verstappen nie był w grze o zwycięstwo, ale zgarnął ważne punkty. Jak to w Monako – mało wyprzedzania, dużo napięcia i masa precyzyjnej jazdy tuż przy barierkach.</p>
+      <div class="galeria">
+        <img src="monako.jpg" alt="Start wyścigu w Monako">
+        <img src="monako2.jpg" alt="Zwycięzca na podium">
+      </div>
+    </div>
+
+    <div class="wyscig nadchodzacy-wyscig">
+      <h4>Nadchodzący wyścig: Grand Prix Hiszpanii</h4>
+      <p>Czas na Barcelonę! Tor Catalunya to klasyka – szybkie łuki, techniczne sekcje i sporo szans na manewry. Po triumfie Norrisa w Monako wszyscy zadają sobie pytanie: czy McLaren pójdzie za ciosem, czy może Red Bull i Ferrari odpowiedzą? Hiszpania to też domowy wyścig dla Carlosa Sainza, więc można się spodziewać dodatkowej motywacji i głośnego dopingu z trybun. Będzie gorąco – nie tylko przez temperaturę asfaltu!</p>
+      <img src="hiszpania.jpg" alt="Tor w Barcelonie">
+    </div>
+  </section>
+</div>
+
+
+  <footer>© 2025 Portal F1 – Wszelkie prawa zastrzeżone.</footer>
+  
+  <script>
+  function pokazCiekawostke(tresc) {
+    const box = document.getElementById("ciekawostka-box-text");
+    box.innerText = tresc;
+  }
+</script>
+
+</body>
+
+</html>
